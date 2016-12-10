@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="RJRf3U" name="JUCECompileEngine" projectType="dll" version="1.0.0"
+              bundleIdentifier="com.yourcompany.JUCECompileEngine" includeBinaryInAppConfig="1"
+              jucerVersion="4.3.0">
+  <MAINGROUP id="dkMDaR" name="JUCECompileEngine">
+    <GROUP id="{DB6901D7-6021-03E9-ECCD-4F76006206E6}" name="Source">
+      <FILE id="JXOcpi" name="Common.h" compile="0" resource="0" file="Source/Common.h"/>
+      <FILE id="ZzVaJf" name="LiveCodeBuilder.h" compile="0" resource="0"
+            file="Source/LiveCodeBuilder.h"/>
+      <FILE id="CGFSTM" name="LiveCodeBuilder.cpp" compile="1" resource="0"
+            file="Source/LiveCodeBuilder.cpp"/>
+      <FILE id="dfbOOr" name="SharedQueue.h" compile="0" resource="0" file="Source/SharedQueue.h"/>
+      <FILE id="OSfICp" name="main.cpp" compile="1" resource="0" file="Source/main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" extraLinkerFlags="-L../../Extras/build/lib -lclangAnalysis -lclangAST -lclangBasic -lclangCodeGen -lclangDriver -lclangEdit -lclangFrontend -lclangLex -lclangParse -lclangRewrite -lclangSema -lclangSerialization -lclangTooling -lLLVMAnalysis -lLLVMAsmParser -lLLVMAsmPrinter -lLLVMBitReader -lLLVMBitWriter -lLLVMCodeGen -lLLVMCore -lLLVMExecutionEngine -lLLVMGlobalISel -lLLVMInstCombine -lLLVMInstrumentation -lLLVMInterpreter -lLLVMMC -lLLVMMCDisassembler -lLLVMMCJIT -lLLVMLibDriver -lLLVMLineEditor -lLLVMLinker -lLLVMMC -lLLVMMCParser -lLLVMScalarOpts -lLLVMSelectionDAG -lLLVMObject -lLLVMIRReader -lLLVMMIRParser -lLLVMObjCARCOpts -lLLVMOption -lLLVMPasses -lLLVMProfileData -lLLVMSupport -lLLVMSymbolize -lLLVMTableGen -lLLVMTarget -lLLVMTransformUtils -lLLVMRuntimeDyld -lLLVMVectorize -lLLVMX86AsmParser -lLLVMX86AsmPrinter -lLLVMX86CodeGen -lLLVMX86Desc -lLLVMX86Info -lLLVMX86Utils -lLLVMipo -lLLVMDebugInfoCodeView"
+               externalLibraries="" extraCompilerFlags="-I../../Extras/llvm/include&#10;-I../../Extras/llvm/tools/clang/include&#10;-I../../Extras/build/include&#10;-I../../Extras/build/tools/clang/include&#10;-fPIC"
+               extraDefs="__STDC_CONSTANT_MACROS=1&#10;__STDC_LIMIT_MACROS=1">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="JUCECompileEngine"
+                       osxSDK="default" osxCompatibility="10.10 SDK" osxArchitecture="default"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="JUCECompileEngine"
+                       osxSDK="default" osxCompatibility="10.10 SDK" osxArchitecture="default"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
